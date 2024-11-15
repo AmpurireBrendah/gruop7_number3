@@ -1,0 +1,52 @@
+.flex-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    background-color: blueviolet;
+}
+.image{
+    margin: 10px;
+    position: relative;
+    width: calc(33.33%-20px);
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(0, 0,0,1);
+
+}
+.image img{
+    width: 100%;
+    height: 150%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: opacity 0.3s ease-in-out;
+}
+.image caption{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    background-color: aqua;
+    color: purple;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+
+}
+.img:hover.caption{
+    opacity: 1;
+    transform: scale(1.1);
+}
+.caption h2{
+    font-size: medium;
+    margin-bottom: 10px;
+}
+.caption p{
+    font-size: small;
+}
+body{
+    background-color: aqua;
+}
+nav:hover.a{
+    color: brown;
+}
